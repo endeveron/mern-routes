@@ -1,0 +1,27 @@
+@import "../../../shared/style/sass/size-vars.scss";
+
+.travel-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  li {
+    box-sizing: border-box;
+  }
+
+  @media all and (min-width: $screen-sm-breakpoint) {
+    li {
+      width: auto;
+    }
+  }
+
+  @media all and (min-width: $screen-m-breakpoint) {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .travel-card {
+      margin-left: 1.25rem;
+    }
+  }
+}

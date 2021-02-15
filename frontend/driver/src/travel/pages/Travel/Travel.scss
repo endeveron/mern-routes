@@ -1,0 +1,48 @@
+@import "../../../shared/style/sass/color-vars.scss";
+@import "../../../shared/style/sass/size-vars.scss";
+
+.travel-paper {
+  max-width: 31.25rem;
+  padding: 1rem 0;
+  margin: 0 auto 2rem;
+
+  @media all and (min-width: $paper-m-breakpoint) {
+    padding: 1rem;
+  }
+
+  @media all and (min-width: $paper-l-breakpoint) {
+    max-width: none;
+    width: 62.5rem;
+    padding: 2rem 1rem;
+
+    .travel-form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .cs-field-group {
+        margin-bottom: 1rem;
+
+        + .cs-field-group {
+          margin-top: 0rem;
+        }
+
+        &:nth-child(2) {
+          justify-content: flex-end;
+        }
+      }
+
+      &__field-pair {
+        width: 29rem;
+      }
+
+      &__field .MuiInputBase-multiline {
+        min-height: 5rem;
+      }
+
+      &__buttons-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}

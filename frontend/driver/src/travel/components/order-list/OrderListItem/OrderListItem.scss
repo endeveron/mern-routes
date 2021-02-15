@@ -1,0 +1,133 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+@import "../../../../shared/style/sass/size-vars.scss";
+
+.order-list-item {
+  &__content,
+  &__phone,
+  &__amount-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__loading {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $card-bg-color;
+  }
+
+  &__content {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  // &__confirmed-icon {
+  //   height: 1rem;
+  //   width: 1rem;
+  //   padding-left: 0.25rem;
+  // }
+
+  &__phone {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: $primary-fill-color;
+    padding-bottom: 0.125rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__details {
+    font-size: 0.875rem;
+  }
+
+  &__name {
+    color: $main-text-color;
+    font-weight: 500;
+  }
+
+  &__notification {
+    color: $secondary-text-darken-color;
+    padding-left: 0.5rem;
+  }
+
+  &__amount-data {
+    position: relative;
+    // overflow: hidden;
+  }
+
+  &__tools {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 2.75rem;
+    height: 1.375rem;
+    background-color: $card-bg-color;
+    transition: opacity 200ms ease;
+    transition-delay: 200ms;
+  }
+
+  &__delete-button {
+    opacity: 0;
+    transform: translate(3rem, -0.85rem);
+    transition-property: opacity, transform;
+    transition-delay: 200ms;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &__content:hover {
+    .order-list-item {
+      &__tools {
+        opacity: 1;
+      }
+
+      &__delete-button {
+        opacity: 1;
+        transform: translate(0, -0.85rem);
+      }
+    }
+  }
+
+  &__seats,
+  &__price {
+    color: $secondary-text-color;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  &__seats {
+    width: 2.25rem;
+    text-align: center;
+  }
+
+  &__price {
+    width: 2.75rem;
+    text-align: end;
+  }
+
+  // &.person-confirmed {
+  //   .order-list-item {
+  //     &__phone {
+  //       color: $secondary-text-color;
+  //     }
+
+  //     &__seats {
+  //       color: $main-text-color;
+  //       font-weight: 700;
+  //     }
+  //   }
+  // }
+
+  + li {
+    margin-top: 1rem;
+  }
+}

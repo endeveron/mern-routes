@@ -1,0 +1,21 @@
+@import "../../../style/sass/color-vars.scss";
+
+.offline-notification {
+  padding: 0 1.25rem 2rem;
+  color: $secondary-text-darken-color;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__message {
+    line-height: 1.5rem;
+    padding: 0 2.5rem;
+  }
+}

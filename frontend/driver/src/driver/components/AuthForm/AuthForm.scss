@@ -1,0 +1,25 @@
+@import "../../../shared//style/sass/color-vars.scss";
+
+.auth-form {
+  &,
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    font-size: 0.875rem;
+
+    &.notification {
+      margin: 0;
+      padding: 1.75rem 0 0.5rem;
+      color: $secondary-text-color;
+      letter-spacing: 0.0625rem;
+    }
+  }
+
+  &__buttons-wrapper {
+    padding: 1.5rem 0 1rem;
+  }
+}

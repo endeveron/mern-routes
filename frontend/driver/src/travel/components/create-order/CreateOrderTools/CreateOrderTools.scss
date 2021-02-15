@@ -1,0 +1,53 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+
+.create-order {
+  &__tools,
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__tools {
+    color: $secondary-text-color;
+    padding: 0.5rem 0;
+
+    > div {
+      text-align: center;
+    }
+  }
+
+  &__available-seats,
+  &__total-price {
+    width: 8rem;
+  }
+
+  &__small-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__available-seats-title {
+    margin-right: 0.5rem;
+  }
+
+  &__currency {
+    margin-left: 0.25rem;
+  }
+
+  &__available-seats-value,
+  &__price-value {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+
+  &__seats-amount {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: $main-text-color;
+  }
+}

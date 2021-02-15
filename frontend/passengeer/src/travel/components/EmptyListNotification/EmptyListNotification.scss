@@ -1,0 +1,7 @@
+@import "../../../shared/style/sass/color-vars.scss";
+
+.notification__message {
+  text-align: center;
+  color: $secondary-text-darken-color;
+  letter-spacing: 0.03125rem;
+}

@@ -1,0 +1,67 @@
+@import "../../../shared/style/sass/color-vars.scss";
+@import "../../../shared/style/sass/size-vars.scss";
+
+.travel-list {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    padding-bottom: 4.5rem;
+  }
+
+  &__title {
+    color: $secondary-text-darken-color;
+    cursor: default;
+    margin: 0;
+    padding: 0.75rem 1.25rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &--irrelevant {
+    li {
+      opacity: 0.5;
+    }
+
+    .travel-card {
+      &__details-time {
+        font-weight: 500;
+        color: $secondary-text-color;
+      }
+
+      &__bar-seats-button {
+        &:nth-child(1) {
+          margin-right: 0.5rem;
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: $screen-sm-breakpoint) {
+    li {
+      width: auto;
+    }
+  }
+
+  @media all and (min-width: $screen-m-breakpoint) {
+    &,
+    &--irrelevant {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      &__title {
+        width: 100%;
+      }
+
+      .travel-card {
+        margin-left: 1.25rem;
+      }
+    }
+  }
+}

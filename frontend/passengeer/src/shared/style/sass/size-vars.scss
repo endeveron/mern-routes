@@ -1,0 +1,18 @@
+// $toggleStickyHeaderScreenHeight: 40rem;
+
+$card-min-width: 22rem;
+$card-max-width: 30rem; // 512px
+$border-radius: 1.5rem;
+$card-row-min-height: 3.5rem;
+
+$left-column-width-sm: 20%;
+$left-column-min-width-sm: 5.5rem;
+
+$screen-sm-breakpoint: 31rem;
+$screen-m-breakpoint: 64rem;
+
+// $bg-image-breakpoint: 32rem;
+
+// @media min-width: $screen-sm-breakpoint
+$left-column-width: 6.25rem;
+$right-column-width: $card-max-width - $left-column-width;

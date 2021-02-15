@@ -1,0 +1,51 @@
+@import "./shared/style/sass/color-vars.scss";
+@import "./shared/style/sass/size-vars.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $app-bg-color;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    width: 100%;
+  }
+}
+
+.v-align-wrapper {
+  height: calc(100vh - 10rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  min-width: $paper-min-width;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  background-color: $inverse-text-color;
+  box-shadow: $box-shadow;
+}
+
+.tool-button {
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

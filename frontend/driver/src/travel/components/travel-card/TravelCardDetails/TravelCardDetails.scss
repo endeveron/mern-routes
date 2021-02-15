@@ -1,0 +1,19 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+@import "../../../../shared/style/sass/size-vars.scss";
+
+.travel-card__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-height: $card-row-min-height;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+
+  &-depart-day,
+  &-time .arrival {
+    color: $secondary-text-color;
+    font-weight: 500;
+  }
+}

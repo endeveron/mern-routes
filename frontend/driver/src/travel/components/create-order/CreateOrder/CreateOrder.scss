@@ -1,0 +1,25 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+
+.create-order {
+  &__reservation,
+  &__luggage,
+  &__contacts {
+    box-sizing: border-box;
+    padding: 2rem 0 1.5rem;
+  }
+
+  &__title {
+    color: $secondary-text-color;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+
+    &-add-space {
+      padding: 2rem 1.125rem;
+    }
+  }
+}

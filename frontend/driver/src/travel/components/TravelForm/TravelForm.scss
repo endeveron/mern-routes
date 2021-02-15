@@ -1,0 +1,76 @@
+@import "../../../shared/style/sass/color-vars.scss";
+@import "../../../shared/style/sass/size-vars.scss";
+
+.travel-form {
+  &__field-pair,
+  .cs-field-group {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__field-pair {
+    box-sizing: border-box;
+  }
+
+  &__field,
+  &__field-pair,
+  .cs-field-group__title {
+    width: 100%;
+  }
+
+  .cs-field-group {
+    padding: 0 1.125rem;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+
+    button {
+      margin-bottom: 2rem;
+
+      &.cs-button--danger {
+        color: $danger-text-color;
+      }
+    }
+  }
+
+  @media all and (min-width: $travel-form-sm-breakpoint) {
+    display: flex;
+    flex-direction: column;
+
+    &__field-pair,
+    .cs-field-group {
+      align-items: flex-start;
+    }
+
+    &__field-pair {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__field:not(.MuiFormControl-fullWidth) {
+      max-width: 14rem;
+    }
+
+    .cs-field-group__title {
+      width: auto;
+      max-width: none;
+    }
+
+    &__buttons-wrapper {
+      flex-direction: row;
+      justify-content: center;
+      padding: 2rem 0;
+
+      button {
+        margin: 0 1rem;
+      }
+    }
+  }
+}

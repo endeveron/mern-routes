@@ -1,0 +1,49 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+@import "../../../../shared/style/sass/size-vars.scss";
+
+.travel-card-header {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: $inverse-text-color;
+  background: $main-fill-gradient;
+
+  &__content,
+  &__filling-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: $card-row-min-height;
+  }
+
+  &__content {
+    justify-content: space-between;
+  }
+
+  &__button {
+    color: $secondary-text-color;
+    margin-right: 0.25rem;
+  }
+
+  &__filling {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__filling-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__filling-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    background: rgba($primary-fill-dark-color, 0.8);
+    transition: width 1.5s cubic-bezier(0.38, 0.01, 0.26, 0.99);
+    box-shadow: 0 0.25rem 1rem 0 rgba($default-shadow-color, 0.3);
+  }
+}

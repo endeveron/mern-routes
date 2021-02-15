@@ -1,0 +1,31 @@
+@import "../../../style/sass/color-vars.scss";
+@import "../../../style/sass/size-vars.scss";
+
+.notification {
+  &__wrapper,
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  &__paper {
+    padding: 1.125rem;
+    max-width: $card-max-width;
+  }
+
+  &__title,
+  &__message {
+    text-align: center;
+  }
+
+  &__button-wrapper {
+    flex-direction: row;
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../style/sass/color-vars.scss";
+@import "../../style/sass/size-vars.scss";
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1.125rem;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+
+    // &--align-center {
+    //   width: 100%;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+  }
+
+  &__button {
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav-before {
+    margin-right: 0.5rem;
+    margin-left: -0.625rem;
+  }
+
+  &__menu-toggler,
+  &__logout {
+    margin-left: 0.5rem;
+    margin-right: -0.625rem;
+  }
+
+  h3 {
+    margin: 0.625rem 0 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    user-select: none;
+  }
+
+  @media all and (min-width: $travel-form-sm-breakpoint) {
+    &__content--align-center {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // @media all and (min-height: $toggleStickyHeaderScreenHeight) {
+  //   position: sticky;
+  //   top: 0;
+  //   background-color: rgba($app-bg-color, 0.95);
+  // }
+}

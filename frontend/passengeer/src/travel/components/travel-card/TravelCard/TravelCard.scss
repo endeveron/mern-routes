@@ -1,0 +1,27 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+@import "../../../../shared/style/sass/size-vars.scss";
+
+.travel-card {
+  width: 100%;
+  min-width: $card-min-width;
+  max-width: $card-max-width;
+  cursor: default;
+  overflow: hidden;
+  user-select: none;
+  margin-bottom: 1.25rem;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  background-color: $card-bg-color;
+  box-shadow: $box-shadow;
+
+  &__depart-date,
+  &__time,
+  &__location {
+    box-sizing: border-box;
+  }
+
+  @media all and (min-width: $screen-sm-breakpoint) {
+    width: $card-max-width;
+  }
+}

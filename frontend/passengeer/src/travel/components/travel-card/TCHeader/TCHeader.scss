@@ -1,0 +1,44 @@
+@import "../../../../shared//style/sass/color-vars.scss";
+@import "../../../../shared//style/sass/size-vars.scss";
+
+.tc-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-height: $card-row-min-height;
+  background: $main-fill-gradient;
+
+  & > div {
+    color: $inverse-text-color;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &__depart-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: $left-column-width-sm;
+    min-width: $left-column-min-width-sm;
+    min-height: $card-row-min-height;
+    border-top-right-radius: 1rem;
+    background-color: $main-fill-darken-color;
+  }
+
+  &__content {
+    width: 100% - $left-column-width-sm;
+    box-sizing: border-box;
+    padding: 0 1.125rem;
+  }
+
+  @media all and(min-width: $screen-sm-breakpoint) {
+    &__depart-date {
+      width: $left-column-width;
+    }
+    &__content {
+      width: $right-column-width;
+    }
+  }
+}

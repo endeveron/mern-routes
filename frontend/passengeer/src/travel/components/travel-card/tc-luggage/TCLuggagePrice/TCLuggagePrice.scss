@@ -1,0 +1,12 @@
+.tc-luggage-price {
+  &__dimensions,
+  &__value {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-right: 0.25rem;
+  }
+
+  &__value {
+    padding-left: 0.75rem;
+  }
+}

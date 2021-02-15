@@ -1,0 +1,47 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+@import "../../../../shared/style/sass/size-vars.scss";
+
+.travel-card__bar,
+.travel-card__bar-content,
+.travel-card__bar-seats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.travel-card__bar {
+  min-height: $card-row-min-height;
+  background: $neutral-fill-color;
+
+  &-content {
+    justify-content: space-between;
+  }
+
+  &-income,
+  &-prices {
+    color: $secondary-text-color;
+    font-weight: 500;
+  }
+
+  &-income {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+
+  &-prices {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+  }
+
+  &-seats-button {
+    &-text {
+      color: $primary-fill-color;
+      font-size: 1.625rem;
+      line-height: 1.625rem;
+
+      &-disabled {
+        color: $secondary-text-color;
+      }
+    }
+  }
+}

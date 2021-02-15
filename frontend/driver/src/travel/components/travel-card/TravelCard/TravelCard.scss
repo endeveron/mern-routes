@@ -1,0 +1,44 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+@import "../../../../shared/style/sass/size-vars.scss";
+
+.travel-card {
+  min-width: $card-min-width;
+  max-width: $card-max-width;
+  cursor: default;
+  overflow: hidden;
+  user-select: none;
+  margin: 0 auto 1.25rem;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  background-color: $card-bg-color;
+  box-shadow: $box-shadow;
+
+  &__left-col,
+  &__right-col {
+    box-sizing: border-box;
+  }
+
+  &__left-col {
+    width: $left-column-width-sm;
+    min-width: $left-column-min-width-sm;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__right-col {
+    width: 100% - $left-column-width-sm;
+  }
+
+  @media all and (min-width: $screen-sm-breakpoint) {
+    width: $card-max-width;
+
+    &__left-col {
+      width: $left-column-width;
+    }
+
+    &__right-col {
+      width: $right-column-width;
+    }
+  }
+}

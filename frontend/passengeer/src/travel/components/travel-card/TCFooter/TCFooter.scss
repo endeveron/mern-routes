@@ -1,0 +1,80 @@
+@import "../../../../shared/style/sass/color-vars.scss";
+
+.tc {
+  &__footer,
+  &__column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__footer {
+    justify-content: space-between;
+  }
+
+  &__left-column,
+  &__seats {
+    box-sizing: border-box;
+    padding: 0 1.125rem;
+  }
+
+  &__left-column {
+    justify-content: flex-start;
+  }
+
+  &__notification,
+  &__seats-title {
+    color: $secondary-text-darken-color;
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase;
+  }
+
+  &__notification {
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+  }
+
+  &__luggage-notification {
+    width: 7.25rem;
+  }
+
+  &__seats {
+    width: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__seats-title {
+    font-size: 0.75rem;
+  }
+
+  &__seats-value {
+    color: $secondary-text-color;
+    font-size: 1.625rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+  }
+
+  &__price {
+    width: 8.5rem;
+    box-sizing: border-box;
+    padding: 0.75rem 0;
+    color: $inverse-text-color;
+    text-align: center;
+    background: $primary-fill-dark-color;
+  }
+
+  &__price-value {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+
+  &__currency {
+    margin-left: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.03125rem;
+  }
+}

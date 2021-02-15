@@ -1,0 +1,42 @@
+$main-text-color: #1b2930;
+$inverse-text-color: #ffffff;
+
+$main-fill-color: #315261; // card title bg
+$main-fill-darken-color: #253d49; // card title bg for accent elements
+$main-fill-gradient: linear-gradient(45deg, #315261 20%, #39687e 80%);
+
+$secondary-text-color: #9eb2b9; // normal text, second ptiority, incative ui elements
+$secondary-text-darken-color: #80949a; // small text, second ptiority
+
+$danger-text-color: #f32f5c;
+$disabled-text-color: #dadee2;
+
+$primary-fill-color: #11b987; // ui interactive elements (buttons, etc)
+$primary-fill-dark-color: #14af81;
+
+$primary-shadow-color: #117a5b;
+$default-shadow-color: #2e373b;
+$box-shadow: 0 0.25rem 1rem 0 rgba($default-shadow-color, 0.1);
+
+$app-bg-color: #eef1f5;
+$card-bg-color: #ffffff;
+$neutral-fill-color: #f7f9fa; // card darken bg
+
+$button-disabled-text-color: $secondary-text-darken-color;
+$button-disabled-fill-color: #eaeef0;
+
+$fab-shadow-color: rgba($primary-shadow-color, 0.4);
+
+:export {
+  primaryFillColor: $primary-fill-color;
+  primaryFillDarkColor: $primary-fill-dark-color;
+  inverseTextColor: $inverse-text-color;
+
+  secondaryTextColor: $secondary-text-color;
+  secondaryTextDArkenColor: $secondary-text-darken-color;
+
+  buttonDisabledTextColor: $button-disabled-text-color;
+  buttonDisabledFillColor: $button-disabled-fill-color;
+
+  fabShadowColor: $fab-shadow-color;
+}

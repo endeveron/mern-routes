@@ -1,0 +1,39 @@
+@import "../../../../../../shared/style/sass/color-vars.scss";
+@import "../../../../../../shared/style/sass/size-vars.scss";
+
+.tc-reservation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0 0.75rem;
+
+  &__field {
+    width: 13rem;
+    margin: 0.5rem;
+  }
+
+  &__notification-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 0.5rem;
+  }
+
+  &__agree-notification {
+    width: 22rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    color: $secondary-text-darken-color;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.03125rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+}

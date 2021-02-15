@@ -1,0 +1,36 @@
+@import "./sass/color-vars.scss";
+
+// Additional rules to customize Mui elements
+
+.MuiButton-contained:not(.MuiButton-containedPrimary) {
+  &:hover,
+  &:active {
+    background-color: white !important;
+    box-shadow: $box-shadow !important;
+  }
+}
+
+.MuiButton-containedPrimary:not(.Mui-disabled) {
+  &:hover,
+  &:active {
+    box-shadow: 0 0.25rem 0.625rem 0 rgba($primary-shadow-color, 0.5) !important;
+  }
+}
+
+.MuiIconButton-root.Mui-disabled {
+  color: $disabled-text-color !important;
+}
+
+// Hide input[type='number'] arrows
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
